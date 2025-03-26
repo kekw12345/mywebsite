@@ -1,0 +1,120 @@
+html,
+body {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  padding-top: 60px; /* Platz für die fixe Navbar */
+  background-color: #292929;
+  overflow: hidden;
+}
+
+/* Navbar-Styling */
+nav {
+  position: fixed; /* Fixiert die Navbar oben */
+  top: 0;
+  left: 0;
+  width: 100%; /* Deckt die gesamte Breite ab */
+  background-color: rgba(0, 0, 0, 0.8); /* Halbtransparenter schwarzer Hintergrund */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5); /* Schatten für Tiefe */
+  z-index: 1000; /* Sicherstellen, dass die Navbar über anderen Elementen liegt */
+  display: flex;
+  justify-content: center;
+  padding: 10px 0;
+}
+
+nav a {
+  position: relative;
+  width: 33.333%;
+  display: table-cell;
+  text-align: center;
+  color: #949494;
+  text-decoration: none;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-weight: bold;
+  padding: 10px 20px;
+  transition: 0.2s ease color;
+}
+
+nav a:before {
+  top: 0;
+  left: 10px;
+  width: 6px;
+  height: 6px;
+}
+
+nav a:after {
+  top: 5px;
+  left: 18px;
+  width: 4px;
+  height: 4px;
+}
+
+nav a:nth-child(1):before {
+  background-color: yellow;
+}
+
+nav a:nth-child(1):after {
+  background-color: red;
+}
+
+nav a:nth-child(2):before {
+  background-color: #00e2ff;
+}
+
+nav a:nth-child(2):after {
+  background-color: #89ff00;
+}
+
+nav a:nth-child(3):before {
+  background-color: purple;
+}
+
+nav a:nth-child(3):after {
+  background-color: palevioletred;
+}
+
+#indicator {
+  position: absolute;
+  left: 5%;
+  bottom: 0;
+  width: 30px;
+  height: 3px;
+  background-color: #fff;
+  border-radius: 5px;
+  transition: 0.2s ease left;
+}
+
+nav a:hover {
+  color: #fff;
+}
+
+nav a:hover:before,
+nav a:hover:after {
+  transform: scale(1);
+}
+
+nav a:nth-child(1):hover ~ #indicator  {
+  background: linear-gradient(130deg, yellow, red);
+}
+
+nav a:nth-child(2):hover ~ #indicator  {
+  left: 35%;
+  background: linear-gradient(130deg, #00e2ff, #89ff00);
+}
+
+nav a:nth-child(3):hover ~ #indicator {
+  left: 75%;
+  background: linear-gradient(130deg, purple, palevioletred);
+}
+
+/* Bild-Styling */
+.profile-image {
+  display: block;
+  margin: 0 auto; /* Zentriert das Bild horizontal */
+  max-width: 100%; /* Passt das Bild an die Bildschirmbreite an */
+  height: auto; /* Beibehaltung des Seitenverhältnisses */
+  margin-top: 20px; /* Abstand zwischen Navbar und Bild */
+}
+
