@@ -80,11 +80,11 @@ p {
   position: fixed;
   left: 0;
   z-index: 600;
-  padding: 10px;
+  padding: 20px;
 }
 
 .nav-brand img {
-  width: 50px;
+  width:80px;
 }
 
 .fa-bars {
@@ -111,6 +111,8 @@ p {
   position: fixed;
   width: 100%;
   z-index: 500;
+  padding-right: 20px;
+  padding-top: 40px;
 }
 
 .header-links li {
@@ -204,14 +206,15 @@ p {
 }
 
 .aboutme {
-  background: url("https://s3-us-west-2.amazonaws.com/files.bradengelhardt.com/brad-bg-main.jpg")
+  background: url(IMG-20250324-WA0001\ \(1\)\ \(1\).jpg)
     no-repeat;
   background-size: cover;
 }
 
 .aboutme p {
-  color: white;
-  font-weight: 100;
+  color: rgb(255, 255, 255);
+  margin-top: 60px;
+  font-weight: 1000;
   font-size: 17.4px;
 }
 
