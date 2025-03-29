@@ -1,43 +1,209 @@
 <!DOCTYPE html>
-<html lang="en">
-
+<html lang="en" >
 <head>
-   <meta charset="utf-8">
-   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   <title>Joshua Zehnder | Portfolio</title>
-   <link rel="stylesheet" href="style.css">
-   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
-   <link rel="icon" type="image/png" href="favicon.png">
-   <meta name="description" content="Persönliche Portfolio-Seite von Joshua Zehnder, ein Entwickler mit Fokus auf Webentwicklung und Software Engineering.">
+  <meta charset="UTF-8">
+  <title>Meine Webseite</title>
+  <title>Joshua Zehnder</title>
+  <meta name="description" content="Web designer and front-end developer">
+  <link href='https://fonts.googleapis.com/css?family=Raleway:100,200,400,600' rel='stylesheet' type='text/css'>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.7.4/jquery.fullPage.min.css" rel="stylesheet" type="text/css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+<link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css'>
+<link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css'><link rel="stylesheet" href="./style.css">
+
 </head>
-
 <body>
-   <header>
-      <nav>
-         <a href="index.html">HOME</a>
-         <a href="projects.html">PROJECTS</a>
-         <a href="about.html">ABOUT</a>
-         <div id="indicator"></div>
-      </nav>
-   </header>
-   <div class="pos">
-     <img src="image/IMG-20250324-WA0001.jpg" alt="Joshua Zehnder" class="profile-image" width="35%" >
-     <h1>Moin, ich bin Joshua Zehnder</h1>
-     <p>Informatikstudent & Softwareentwickler mit Leidenschaft für sauberen Code.</p>
-     <a href="projects.html" class="btn">Meine Projekte</a>
-   </div>
-   
-   
+<!-- partial:index.partial.html -->
+<body>
+  <!-- navbar header -->
+  <div class="nav-header">
+    <div class="nav-brand">
+      <img src="images/Neues Projekt.png" alt="Logo">
+    </div>
+    <i class="fa fa-bars fa-3x"></i>
+    <div class="header-links">
+      <ul>
+        <li data-menuanchor="fourthPage"><a href="#contact">CONTACT</a></li>
+        <li data-menuanchor="thirdPage"><a href="#portfolio">PORTFOLIO</a></li>
+        <li data-menuanchor="secondPage"><a href="#about">ABOUT</a></li>
+      </ul>
+    </div>
+  </div>
+  <!-- end navbar header -->
 
-   <footer>
-      <p>© 2025 Joshua Zehnder</p>
-      <div class="social-icons">
-         <a href="https://github.com/deinusername"><i class="fab fa-github"></i></a>
-         <a href="https://linkedin.com/in/deinprofil"><i class="fab fa-linkedin"></i></a>
+  <!-- sidebar slider -->
+  <div class="nav-screen">
+    <i class="fa fa-times fa-3x"></i>
+    <div class="nav-container">
+      <div class="nav-links">
+        <ul id='myMenu'>
+          <li data-menuanchor="secondPage"><a href="#about">ABOUT</a></li>
+          <li data-menuanchor="thirdPage"><a href="#portfolio">PORTFOLIO</a></li>
+          <li data-menuanchor="fourthPage"><a href="#contact">CONTACT</a></li>
+        </ul>
       </div>
-   </footer>
+    </div>
+  </div>
+  <!-- end navbar slider -->
 
-   <script src="script.js"></script>
+  <!-- begin fullpage -->
+
+  <div id="fullpage">
+
+    <!-- begin section -->
+
+    <div class="section aboutme" data-anchor="aboutme">
+      <div class="opaque-bg animated fadeInDown">
+        <h1 style="color:white">JOSHUA<span style="color:#FF6363">/</span>ZEHNDER</h1>
+        <p><span id="holder"></span><span class="blinking-cursor">|</span></p>
+      </div>
+      <i id="moveDown" class="fa fa-chevron-down fa-3x bounce"></i>
+    </div>
+    <!-- end section -->
+
+    <!-- begin section -->
+
+    <div class="section" data-anchor="skills">
+      <div class="content">
+        <h1 class="wow fadeInDown" data-wow-delay="0.2s">ABOUT ME</h1>
+        <p class="wow fadeInDown" data-wow-delay="0.2s">Hi, I'm Joshua Zehnder! I'm a Software Engineer with a passion for Game Development and Machine Learning. Always looking for new challenges.</p>
+
+        <div class=" wow fadeInUp container-skillbar" data-wow-delay="0.2s">
+          <div class="skillbar clearfix " data-percent="90%">
+            <div class="skillbar-title" style="background: #DD1E2F;"><span>Java</span></div>
+            <div class="skillbar-bar" style="background: #DD1E2F;"></div>
+            <div class="skill-bar-percent">90%</div>
+          </div> <!-- End Skill Bar -->
+
+          <div class="skillbar clearfix " data-percent="80%">
+            <div class="skillbar-title" style="background: #EBB035;"><span>Python</span></div>
+            <div class="skillbar-bar" style="background: #EBB035;"></div>
+            <div class="skill-bar-percent">80%</div>
+          </div> <!-- End Skill Bar -->
+
+          <div class="skillbar clearfix " data-percent="75%">
+            <div class="skillbar-title" style="background: #218559;"><span>Tensorflow</span></div>
+            <div class="skillbar-bar" style="background: #218559;"></div>
+            <div class="skill-bar-percent">75%</div>
+          </div> <!-- End Skill Bar -->
+
+          <div class="skillbar clearfix " data-percent="70%">
+            <div class="skillbar-title" style="background: #6840D4;"><span>C++</span></div>
+            <div class="skillbar-bar" style="background: #6840D4;"></div>
+            <div class="skill-bar-percent">70%</div>
+          </div> <!-- End Skill Bar -->
+
+          <div class="skillbar clearfix " data-percent="65%">
+            <div class="skillbar-title" style="background: #06A2CB;"><span>Pytorch</span></div>
+            <div class="skillbar-bar" style="background: #06A2CB;"></div>
+            <div class="skill-bar-percent">65%</div>
+          </div> <!-- End Skill Bar -->
+
+          <div class="skillbar clearfix " data-percent="60%">
+            <div class="skillbar-title" style="background: #AB4DD2;"><span>Webdev</span></div>
+            <div class="skillbar-bar" style="background: #AB4DD2;"></div>
+            <div class="skill-bar-percent">60%</div>
+          </div> <!-- End Skill Bar -->
+        </div>
+      </div>
+    </div>
+    <!-- end section -->
+
+    <!-- begin section -->
+
+    <div class="section" data-anchor="projects">
+      <div class="content-slide">
+        <div class="slide">
+          <h1 class="wow fadeInDown" data-wow-delay="0.2s">Blade of the Jungle</h1>
+          <p class="wow fadeInDown" data-wow-delay="0.2s">A Singleplayer Game made with Java-Swing </p>
+          <p class="wow fadeInDown" data-wow-delay="0.2s"><a href="https://www.github.com/kekw12345/Blade-of-the-Jungle">Project</a> </p>
+          <img class="wow fadeInUp" data-wow-delay="0.2s" src="/images/Screenshot 2025-03-27 135328.png">
+        </div>
+        <div class="slide">
+          <h1>Trade Ai</h1>
+          <p>Ai that predicts the stock market 
+          </p>
+          <img src="images/Figure_1.png">
+        </div>
+        <div class="slide">
+          <h1>Feeding Schedule Algorithm</h1>
+          <p>Biogas algorithm that provides the desired output based on what is available to feed.</p>
+          <p>Payed Project for Hiller Biogas GmbH & Co. KG (still in progress)</p>
+          <img src="images/230724-1410-427072685.png">
+        </div>
+        <div class="slide">
+          <h1>Food Fit Anna</h1>
+          <p>Paid project for building a website for a client.</p>
+          <img src="/images/Screenshot 2025-03-27 195559.png"/>
+        </div>
+      </div>
+    </div>
+    <!-- end section -->
+
+    <!-- begin section -->
+
+    <div class="section" data-anchor="contact">
+      <div class="content wow fadeInDown" data-wow-delay="0.2s">
+        <h1>CONTACT ME</h1>
+        <p>Whether you're interested in working with me or just want to say hello, I'd love to hear from you!</p>
+        <br>
+        <div class="contact-form">
+
+          <div id="form-messages"></div>
+          <form id="ajax-contact" method="post" role="form" action="https://formspree.io/f/manedbwr" data-toggle="validator">
+            <div class="form-group has-feedback wow fadeInLeft" data-wow-delay="0.6s">
+              <input type="text" class="form-control" id="name" name="name" placeholder="NAME" data-error="Field can't be blank!" required>
+              <span class="glyphicon form-control-feedback" aria-hidden="true"></span>
+              <div class="help-block with-errors"></div>
+            </div>
+
+            <div class="form-group has-feedback wow fadeInRight" data-wow-delay="0.8s">
+              <input type="email" class="form-control" id="email" name="email" placeholder="EMAIL" data-error="Field can't be blank!" required>
+              <span class="glyphicon form-control-feedback" aria-hidden="true"></span>
+              <div class="help-block with-errors"></div>
+            </div>
+
+            <div class="form-group has-feedback wow fadeInLeft" data-wow-delay="1s">
+              <textarea data-minlength="10" class="form-control" id="message" name="message" placeholder="MESSAGE" data-error="Minimum of 10 characters" required></textarea>
+              <span class="glyphicon form-control-feedback" aria-hidden="true"></span>
+              <div class="help-block with-errors"></div>
+            </div>
+
+            <div class="hidden">
+              <input type="text" class="form-control" id="human" name="human" placeholder="">
+            </div>
+            <div class="wow fadeInUp" data-wow-delay="1s">
+              <button type="submit" id="submit" name="submit" class="btn btn-lg">SEND MESSAGE</button>
+            </div>
+          </form>
+          <br>
+        </div>
+      </div>
+    </div>
+    <!-- end section -->
+
+    <!-- begin section -->
+
+    <div class="section fp-auto-height">
+      <div class="footer">
+        <p>CONNECT WITH ME</p>
+        <div class="social-links">
+          <span><a href="www.linkedin.com/in/joshua-zehnder" target="_blank"><i class="fa fa-linkedin fa-2x"></i></a></span>
+          <span><a href="https://github.com/kekw12345" target="_blank"><i class="fa fa-github fa-2x"></i></a></span>
+          
+        </div>
+      </div>
+    </div>
+    <!-- end section -->
+
+  </div>
+  <!-- end fullpage -->
 </body>
+<!-- partial -->
+  <script src='https://code.jquery.com/jquery-2.1.1.min.js'></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js'></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.2/js/bootstrap.min.js'></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.7.4/jquery.fullPage.min.js'></script><script  src="./script.js"></script>
 
+</body>
 </html>
