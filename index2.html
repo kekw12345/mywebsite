@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <title>Mit Übergang</title>
+  <style>
+    body, html {
+      margin: 0;
+      padding: 0;
+      height: 100%;
+      font-family: sans-serif;
+    }
+
+    /* Splash Screen */
+    #splash {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: #000;
+      color: #fff;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 24px;
+      z-index: 9999;
+      opacity: 1;
+      transition: opacity 1s ease-out; /* Übergang */
+    }
+
+    /* Wenn ausgeblendet, dann fade out */
+    #splash.fade-out {
+      opacity: 0;
+    }
+
+    /* Hauptinhalt */
+    #main-content {
+      display: none;
+      padding: 30px;
+      animation: fadeIn 1s ease-in;
+    }
+
+    /* Fade-in-Animation für Hauptinhalt */
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Splash-Screen -->
+  <div id="splash">
+     WASD Use Arrow-Keys for the best Experience
+  </div>
+
+  <!-- Hauptinhalt -->
+  <div id="main-content">
+    <h1>Willkommen, Bro!</h1>
+    <p>Jetzt geht’s richtig los mit deiner Seite ✨</p>
+  </div>
+
+  <script>
+    $(document).ready(function () {
+  // typing animation
+  (function ($) {
+    $.fn.writeText = function (content) {
+      var contentArray = content.split(""),
+        current = 0,
+        elem = this;
+      setInterval(function () {
+        if (current < contentArray.length) {
+          elem.text(elem.text() + contentArray[current++]);
+        }
+      }, 80);
+    };
+  })(jQuery);
+  $("#main-content").writeText("JOSHUA/ZEHNDER");
+    // Nach 3 Sekunden den Fade-Out starten
+    setTimeout(() => {
+      const splash = document.getElementById('splash');
+      splash.classList.add('fade-out');
+
+      // Warte noch 1s (für Übergang), dann ausblenden und Main anzeigen
+      setTimeout(() => {
+        splash.style.display = 'none';
+        document.getElementById('main-content').style.display = 'block';
+      }, 1000);
+    }, 3000);
+  });
+  </script>
+
+</body>
+</html>

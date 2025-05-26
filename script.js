@@ -12,7 +12,7 @@ $(document).ready(function () {
       }, 80);
     };
   })(jQuery);
-
+  
   // input text for typing animation
   $("#holder").writeText("SOFTWARE ENGINEER + PASSION FOR AI");
 
